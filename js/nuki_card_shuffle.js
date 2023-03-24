@@ -23,6 +23,27 @@
         <div class="nuki-card-shuffle-container">
           <ul class="nuki-card-shuffle-list">
       `
+      const formatReviewRate = (input) => {
+        if (input <= 1.24) {
+          return 1.0;
+        } else if (input >= 1.25 && input <= 1.74) {
+          return 1.5;
+        } else if (input >= 1.75 && input <= 2.24) {
+          return 2.0;
+        } else if (input >= 2.25 && input <= 2.74) {
+          return 2.5;
+        } else if (input >= 2.75 && input <= 3.24) {
+          return 3.0;
+        } else if (input >= 3.25 && input <= 3.74) {
+          return 3.5;
+        } else if (input >= 3.75 && input <= 4.24) {
+          return 4.0;
+        } else if (input >= 4.25 && input <= 4.74) {
+          return 4.5;
+        } else {
+          return 5.0;
+        }
+      }
       const li = options.map((option) => {
         return `
           <li class="nuki-card-shuffle-card">
@@ -45,7 +66,7 @@
                 ${option.title.substring(0, 20)}...
               </a>
               <p class="nuki-card-shuffle-review">
-                <span data-rate="${option.review_average}"></span>（${option.review_count}）
+                <span data-rate="${formatReviewRate(option.review_average)}"></span>（${option.review_count}）
               </p>
               <p class="nuki-card-shuffle-button">
                 <button
