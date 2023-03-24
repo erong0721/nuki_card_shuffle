@@ -43,9 +43,7 @@
   position: relative;
   height: 60%;
 }
-
-.nuki-card-shuffle-media img,
-.nuki-card-shuffle-media iframe {
+.nuki-card-shuffle-media img {
   position: absolute;
   top: 0;
   left: 0;
@@ -54,7 +52,10 @@
   -o-object-fit: cover;
   object-fit: cover;
 }
-
+.nuki-card-shuffle-media img:hover {
+  opacity: 0.6;
+  filter: brightness(110%);
+}
 .nuki-card-shuffle-content {
   height: 40%;
 }
@@ -69,6 +70,10 @@
   text-decoration: none;
 }
 
+.nuki-card-shuffle-content a:hover {
+  opacity: 0.6;
+  filter: brightness(110%);
+}
 .nuki-card-shuffle-review {
   text-align: center;
   margin: 5px;
