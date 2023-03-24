@@ -11,8 +11,6 @@
 </head>
 <body>
   <div id="test"></div>
-
-
 </body>
 ```
 
