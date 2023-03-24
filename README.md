@@ -20,7 +20,7 @@
    * 必ず3つ指定すること
    * 下記コードで取得することも可能
    *   (async () => {
-   *     const res = await fetch('https://api.dmm.com/affiliate/v3/ItemList?api_id=[APIID]&affiliate_id=[アフィリエイトID]&site=FANZA&service=digital&floor=videoa&hits=3&output=json'"');
+   *     const res = await fetch('https://api.dmm.com/affiliate/v3/ItemList?api_id=[APIID]&affiliate_id=[アフィリエイトID]&site=FANZA&service=digital&floor=videoa&hits=3&output=json');
    *     const data = await res.json();
    *     const options = data.result.items.map((d) => {
    *       return {
