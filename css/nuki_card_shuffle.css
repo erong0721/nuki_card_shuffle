@@ -1,0 +1,232 @@
+/**
+ * Copyright 2023 Kazumasa Yamashita
+ * Released under the MIT License
+ */
+.nuki-card-shuffle-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nuki-card-shuffle-container .nuki-card-shuffle-list {
+  height: 420px;
+  position: relative;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card {
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  perspective: 1000;
+  float: left;
+  width: 20%;
+  height: 400px;
+  background-color: #FBFBFB;
+  box-shadow: 0px 0px 10px -3px #cbc2a6;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+}
+
+.nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card.ani0 {
+  right: 12.5%;
+}
+
+.nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card.ani1 {
+  right: 37.5%;
+}
+
+.nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card.ani2 {
+  right: 62.5%;
+}
+
+.nuki-card-shuffle-media {
+  position: relative;
+  height: 60%;
+}
+
+.nuki-card-shuffle-media img,
+.nuki-card-shuffle-media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.nuki-card-shuffle-content {
+  height: 40%;
+}
+
+.nuki-card-shuffle-content a {
+  display: block;
+  padding: 10px;
+  color: #3b3634;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nuki-card-shuffle-review {
+  text-align: center;
+  margin: 5px;
+}
+
+.nuki-card-shuffle-review span {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  white-space: nowrap;
+  color: #CCCCCC;
+  font-size: 1rem;
+}
+
+.nuki-card-shuffle-review span:before,
+.nuki-card-shuffle-review span:after {
+  content: '★★★★★';
+}
+
+.nuki-card-shuffle-review span:after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #ffcf32;
+}
+
+.nuki-card-shuffle-review span[data-rate="5"]:after {
+  width: 100%;
+}
+
+.nuki-card-shuffle-review span[data-rate="4.5"]:after {
+  width: 90%;
+}
+
+.nuki-card-shuffle-review span[data-rate="4"]:after {
+  width: 80%;
+}
+
+.nuki-card-shuffle-review span[data-rate="3.5"]:after {
+  width: 70%;
+}
+
+.nuki-card-shuffle-review span[data-rate="3"]:after {
+  width: 60%;
+}
+
+.nuki-card-shuffle-review span[data-rate="2.5"]:after {
+  width: 50%;
+}
+
+.nuki-card-shuffle-review span[data-rate="2"]:after {
+  width: 40%;
+}
+
+.nuki-card-shuffle-review span[data-rate="1.5"]:after {
+  width: 30%;
+}
+
+.nuki-card-shuffle-review span[data-rate="1"]:after {
+  width: 20%;
+}
+
+.nuki-card-shuffle-review span[data-rate="0.5"]:after {
+  width: 10%;
+}
+
+.nuki-card-shuffle-review span[data-rate="0"]:after {
+  width: 0%;
+}
+
+.nuki-card-shuffle-button {
+  text-align: center;
+  margin: 0;
+}
+
+.nuki-card-shuffle-button button {
+  font-size: 0.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #ACC4BE;
+  border: none;
+  border-bottom: 5px solid #869894;
+  padding-left: 10px;
+}
+
+.nuki-card-shuffle-button button:hover {
+  margin-top: 3px;
+  background: #ACC4BE;
+  border-bottom: 2px solid #869894;
+}
+
+.nuki-card-shuffle-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nuki-card-shuffle-modal-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 760px;
+  padding: 20px;
+  background-color: #869894;
+  z-index: 2;
+  animation-name: nuki-card-shuffle-modal-open;
+  animation-duration: 0.5s;
+}
+
+@keyframes nuki-card-shuffle-modal-open {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.nuki-card-shuffle-modal-close {
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nuki-card-shuffle-modal-close:hover {
+  cursor: pointer;
+}
