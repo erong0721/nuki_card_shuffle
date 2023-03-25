@@ -136,7 +136,7 @@
   width: 60%;
 }
 
-.nuki-card-shuffle-review span[data-rate="2.5"]:after {
+.nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card .nuki-card-shuffle-content .nuki-card-shuffle-review .nuki-card-shuffle-review span[data-rate="2.5"]:after {
   width: 50%;
 }
 
@@ -163,6 +163,7 @@
 .nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card .nuki-card-shuffle-content .nuki-card-shuffle-button {
   text-align: center;
   margin: 0;
+  padding: 1px;
 }
 
 .nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card .nuki-card-shuffle-content .nuki-card-shuffle-button button {
@@ -187,7 +188,10 @@
   background-color: #ef4b53;
   border: none;
   border-bottom: 5px solid #b9383e;
-  padding-left: 10px;
+  padding: 3px;
+}
+.nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card .nuki-card-shuffle-content .nuki-card-shuffle-button button[data-video=""] {
+  display: none;
 }
 
 .nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card .nuki-card-shuffle-content .nuki-card-shuffle-button button:hover {

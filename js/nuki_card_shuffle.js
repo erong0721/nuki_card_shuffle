@@ -24,7 +24,9 @@
           <ul class="nuki-card-shuffle-list">
       `
       const formatReviewRate = (input) => {
-        if (input <= 1.24) {
+        if (input <= 0.74) {
+          return 0;
+        } else if (input >= 0.75 && input <= 1.24) {
           return 1.0;
         } else if (input >= 1.25 && input <= 1.74) {
           return 1.5;
