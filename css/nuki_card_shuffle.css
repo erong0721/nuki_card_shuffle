@@ -26,6 +26,15 @@
   right: 10%;
   bottom: 0;
 }
+.nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card:nth-child(1) {
+  z-index: 3;
+}
+.nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card:nth-child(2) {
+  z-index: 2;
+}
+.nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card:nth-child(3) {
+  z-index: 1;
+}
 .nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card.ani2 {
   right: 12.5%;
 }
