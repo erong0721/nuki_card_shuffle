@@ -35,7 +35,7 @@
    *     console.log(options)
    *   })()
    */
-  const opeions = [
+  const options = [
     {
         "title": result.items.[n].title,
         "affiliateURL": result.items.[n].affiliateURL,
