@@ -49,13 +49,13 @@
   .nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card {
     width: 30%;
   }
-  .nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card.ani0 {
+  .nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card.ani2 {
     right: 2%;
   }
   .nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card.ani1 {
     right: 35%;
   }
-  .nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card.ani2 {
+  .nuki-card-shuffle-container .nuki-card-shuffle-list .nuki-card-shuffle-card.ani0 {
     right: 68%;
   }
 }
