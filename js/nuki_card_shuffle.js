@@ -87,8 +87,6 @@
             <iframe
               class="nuki-card-shuffle-modal-video"
               src=""
-              width="720"
-              height="480"
             ></iframe>
           </div>
         </div>
